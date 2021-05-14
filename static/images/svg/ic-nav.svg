@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.344" height="24.172" viewBox="0 0 48.344 24.172">
+  <g id="menu" transform="translate(0 -96.243)">
+    <g id="Menu_1_" transform="translate(0 96.243)">
+      <path id="Контур_339" data-name="Контур 339" d="M1.511,99.264H46.834a1.511,1.511,0,0,0,0-3.021H1.511a1.511,1.511,0,0,0,0,3.021Z" transform="translate(0 -96.243)"/>
+      <path id="Контур_340" data-name="Контур 340" d="M46.834,180.455H1.511a1.511,1.511,0,0,0,0,3.021H46.834a1.511,1.511,0,0,0,0-3.021Z" transform="translate(0 -169.88)"/>
+      <path id="Контур_341" data-name="Контур 341" d="M152.029,264.667H121.814a1.511,1.511,0,1,0,0,3.021h30.215a1.511,1.511,0,1,0,0-3.021Z" transform="translate(-105.195 -243.516)"/>
+    </g>
+  </g>
+</svg>

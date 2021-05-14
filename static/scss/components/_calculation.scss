@@ -1,0 +1,215 @@
+.calculation-page{
+  border-top: 1px solid $light;
+  padding: 60px 0 39px;
+  .title-section{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 63px;
+  }
+  .calculation-item{
+    margin-bottom: 60px;
+    &:nth-of-type(2){
+      margin-bottom: 57px;
+    }
+  }
+  .calculation-inner{
+    max-width: 330px;
+  }
+  .calculation-item__title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    padding-bottom: 20px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid $light;
+  }
+  .label-radio{
+    background-color: $secondary;
+    padding: 20px 30px 19px;
+    color: $black;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    &:before{
+      display: none;
+    }
+    .icon{
+      fill: $light-100;
+      width: 36px;
+      margin-right: 16px;
+    }
+  }
+  .select{
+    margin-bottom: 32px;
+  }
+  .input{
+    &-radio,
+    &-checkbox {
+      &:checked {
+        + .label-radio {
+          background-color: $primary;
+          color: $white;
+          .icon{
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+  .calculation-delivery{
+    .label-radio{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul{
+      max-width: 250px;
+      margin-bottom: 60px;
+    }
+    li{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .modal-group{
+      margin-bottom: 60px;
+    }
+  }
+
+  .delivery-title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $black;
+  }
+  .delivery-price{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $light-100;
+  }
+
+  .total-price{
+    max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-title{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: $black;
+  }
+  .total-sum{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: $primary;
+  }
+}
+@media screen and (min-width: 768px)  {
+  .calculation-page{
+    .calculation-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+      }
+    }
+    .calculation-item{
+      margin: 0 15px 60px;
+    }
+  }
+
+}
+@media screen and (min-width: 1024px)  {
+  .calculation-page{
+    padding: 60px 0 41px;
+    .title-section{
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 59px;
+    }
+    .calculation-item__title,
+    .calculation-inner{
+      box-sizing: border-box;
+      padding: 0 15px 20px;
+    }
+    .calculation-item{
+      width: 33.3333%;
+      margin: 0 0 60px;
+      border-right: 1px solid $light;
+
+      &:last-of-type{
+        border-right: 1px solid transparent;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1300px)  {
+  .calculation-page {
+    .calculation-wrap form {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 0 0;
+    }
+    .calculation-inner {
+      max-width: 345px;
+    }
+    .calculation-item {
+      &:nth-of-type(1){
+        max-width: 421px;
+        .calculation-item__title,
+        .calculation-inner{
+          padding-left: 0;
+        }
+      }
+      &:nth-of-type(2){
+        max-width: 480px;
+        width: 40%;
+        .calculation-item__title{
+          padding-left: 74px;
+        }
+        .calculation-inner{
+          margin: 0 auto;
+        }
+      }
+      &:nth-of-type(3){
+        width: 100%;
+        max-width: 524px;
+        .calculation-inner {
+          max-width: 500px;
+          margin: 0 0 0 75px;
+          padding: 0;
+        }
+        .calculation-item__title{
+          padding-left: 74px;
+        }
+        .modal-group{
+          display: flex;
+        }
+      }
+    }
+    .calculation-delivery {
+      .modal-group {
+        margin-bottom: 41px;
+      }
+      .label-radio {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px 34px 19px 34px;
+        &:first-of-type{
+          margin-right: 28px;
+        }
+      }
+    }
+  }
+}

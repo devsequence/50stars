@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="top-section" style="background-image: url('../static/images/general/track-bg.jpg')">
+			<div class="container">
+				<div class="title-section">Отследить контейнер</div>
+				<div class="title-wrap">
+					<div class="title-form">
+						<form>
+							<label class="label">
+								<input type="text" class="input" placeholder="По номеру телефона">
+							</label>
+							<button class="btn btn-secondary" type="submit" aria-label="search">Поиск</button>
+							<div class="modal-group">
+								<input type="radio" id="track-phone-number" class="input-radio" name="type-car" checked>
+								<label class="label-radio" for="track-phone-number">По номеру телефона</label>
+								<input type="radio" id="track-phone-container" class="input-radio" name="type-car" value="20">
+								<label class="label-radio" for="track-phone-container">По номеру контейнера</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="title-wrapper__result">
+			<div class="container">
+				<div class="filter-nav">
+					<div class="filter-nav__title">
+						Найдено: 4 контейнера
+					</div>
+				</div>
+				<div class="track-list">
+					<div class="track-item">
+						<div class="track-item__des">
+							<svg class="icon">
+								<use xlink:href="#ic-container"></use>
+							</svg>
+							<ul>
+								<li>MRKU3694167</li>
+								<li>MAERSK  LINE</li>
+								<li>HYUNDAI SONATA 2015 г.в.</li>
+								<li>VIN:  5NPE24AF8FH088561</li>
+							</ul>
+						</div>
+						<div class="track-item__media">
+							<div class="track-item__date">
+								<span>4 марта 2021</span>
+								<span>6 июня 2021</span>
+							</div>
+							<ul class="item-progress">
+								<li class="active"><span>На складе</span></li>
+								<li class=""><span>Загружено в контейнер</span></li>
+								<li class=""><span>В процессе доставки</span></li>
+								<li class=""><span>Прибыло в порт назначения</span></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>

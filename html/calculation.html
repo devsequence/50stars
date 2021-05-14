@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="calculation-page">
+			<div class="container">
+				<div class="title-section">Рассчитать стоимость</div>
+				<div class="calculation-wrap">
+					<form>
+						<div class="calculation-item">
+							<div class="calculation-item__title">1. Тип машины</div>
+							<div class="calculation-inner calculation-type">
+								<div class="modal-group">
+									<input type="radio" id="sedan" class="input-radio" name="type-car" value="10" checked="">
+									<label class="label-radio" for="sedan">
+										<svg class="icon">
+											<use xlink:href="#ic-sedan"></use>
+										</svg>
+										<span>
+											Sedan, Small SUV
+										</span>
+									</label>
+								</div>
+								<div class="modal-group">
+									<input type="radio" id="medium" class="input-radio" name="type-car" value="20">
+									<label class="label-radio" for="medium">
+										<svg class="icon">
+											<use xlink:href="#ic-medium"></use>
+										</svg>
+										<span>
+											Medium SUV
+										</span>
+									</label>
+								</div>
+								<div class="modal-group">
+									<input type="radio" id="pickup" class="input-radio" name="type-car" value="30">
+									<label class="label-radio" for="pickup">
+										<svg class="icon">
+											<use xlink:href="#ic-pickup"></use>
+										</svg>
+										<span>
+											Pickup, Big SUV
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="calculation-item">
+							<div class="calculation-item__title">2. Доставка</div>
+							<div class="calculation-inner calculation-select">
+								<select class="select" name="auction" id="auction">
+									<option selected="true" disabled="disabled">Выберите акукцион</option>
+									<option value="10">Акукцион 1</option>
+									<option value="20">Акукцион 2</option>
+									<option value="30">Акукцион 3</option>
+								</select>
+								<select class="select" name="location" id="location">
+									<option selected="true" disabled="disabled">Выберите локацию</option>
+									<option value="10">Локация 1</option>
+									<option value="20">Локация 2</option>
+									<option value="30">Локация 3</option>
+								</select>
+								<select class="select" name="port" id="port">
+									<option selected="true" disabled="disabled">Выберите порт</option>
+									<option value="10">Порт 1</option>
+									<option value="20">Порт 2</option>
+									<option value="30">Порт 3</option>
+									<option value="40">Порт 4</option>
+								</select>
+								<select class="select" name="portUkraine" id="portUkraine">
+									<option selected="true" disabled="disabled">Выберите порт в Украине</option>
+									<option value="10">Порт в Украине 1</option>
+									<option value="20">Порт в Украине 2</option>
+									<option value="30">Порт в Украине 3</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="calculation-item">
+							<div class="calculation-item__title">3. Доставка за автомобиль</div>
+							<div class="calculation-inner calculation-delivery">
+								<div class="modal-group">
+									<input type="radio" id="delivery-1" class="input-radio" name="delivery-car" value="40" checked="">
+									<label class="label-radio" for="delivery-1">
+										<svg class="icon">
+											<use xlink:href="#ic-sedan"></use>
+										</svg>
+										<span>
+											4 машины
+										</span>
+									</label>
+									<input type="radio" id="delivery-2" class="input-radio" name="delivery-car" value="30">
+									<label class="label-radio" for="delivery-2">
+										<svg class="icon">
+											<use xlink:href="#ic-medium"></use>
+										</svg>
+										<span>
+											3 машины
+										</span>
+									</label>
+								</div>
+								<ul>
+									<li>
+										<span class="delivery-title">Доставка по суше:</span>
+									 	<span class="delivery-price">0$</span>
+									</li>
+									<li>
+										<span class="delivery-title">Доставка по морю:</span>
+									 	<span class="delivery-price">0$</span>
+									</li>
+									<li>
+										<span class="delivery-title">Комисcия 50STARS:</span>
+									 	<span class="delivery-price">0$</span>
+									</li>
+								</ul>
+								<div class="total-price">
+									<span class="total-title">Общая сума:</span>
+									<span class="total-sum">0$</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>

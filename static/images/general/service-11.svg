@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.03" height="44.67" viewBox="0 0 52.424 60">
+  <g id="service-11" transform="translate(0.768 -9)">
+    <path id="Контур_298" data-name="Контур 298" d="M22.586,32.445a.918.918,0,0,0,1.51,0l8.113-13.521a10.339,10.339,0,0,0,1.473-5.32V13.34A10.34,10.34,0,1,0,13,13.34V13.6a10.339,10.339,0,0,0,1.473,5.32Zm.755-26a6.894,6.894,0,1,1-6.894,6.894A6.893,6.893,0,0,1,23.34,6.447Z" transform="translate(1.89 6)" fill="#1165e3"/>
+    <path id="Контур_300" data-name="Контур 300" d="M41.638,29H29v4.6H42.787V30.149A1.15,1.15,0,0,0,41.638,29Z" transform="translate(4.273 3.234)" fill="#1165e3"/>
+    <path id="Контур_302" data-name="Контур 302" d="M23,51v6.894H39.085V51Zm4.6,4.6H25.3V53.3h2.3Zm4.6,0h-2.3V53.3h2.3Z" transform="translate(3.379 6.511)" fill="#1165e3"/>
+    <path id="Контур_304" data-name="Контур 304" d="M16.787,29H4.149A1.15,1.15,0,0,0,3,30.149V33.6H16.787Z" transform="translate(0.401 3.234)" fill="#1165e3"/>
+    <path id="Контур_306" data-name="Контур 306" d="M44.362,62.574H23.681V51.085H44.362L46.659,56V35H32.872v4.6H16.787V35H3V63.723a1.15,1.15,0,0,0,1.149,1.149H45.51a1.15,1.15,0,0,0,1.149-1.149V56l-2.3-4.919Zm-36.766,0H5.3v-2.3H7.6Zm4.6,0h-2.3v-2.3h2.3Zm4.6,0h-2.3v-2.3h2.3Zm0-4.6H5.3v-2.3H16.787Z" transform="translate(0.401 4.128)" fill="#1165e3"/>
+    <path id="Контур_308" data-name="Контур 308" d="M43,11h2.3v2.3H43Z" transform="translate(6.358 6.085)" fill="#1165e3"/>
+    <path id="Контур_334" data-name="Контур 334" d="M43,11h2.3v2.3H43Z" transform="translate(-34.577 6.085)" fill="#1165e3"/>
+    <path id="Контур_310" data-name="Контур 310" d="M39,11h2.3v2.3H39Z" transform="translate(5.762 6.085)" fill="#1165e3"/>
+    <path id="Контур_332" data-name="Контур 332" d="M39,11h2.3v2.3H39Z" transform="translate(-35.172 6.085)" fill="#1165e3"/>
+    <path id="Контур_311" data-name="Контур 311" d="M35,11h2.3v2.3H35Z" transform="translate(5.167 6.085)" fill="#1165e3"/>
+    <path id="Контур_333" data-name="Контур 333" d="M35,11h2.3v2.3H35Z" transform="translate(-35.768 6.085)" fill="#1165e3"/>
+  </g>
+</svg>

@@ -1,0 +1,225 @@
+.top-section{
+  padding: 60px 0;
+  position: relative;
+  min-height: 529px;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($black, .3);
+    z-index: 2;
+  }
+  .container{
+    position: relative;
+    z-index: 3;
+  }
+  .title-section{
+    color: $white;
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 60px;
+  }
+  .title-wrap{}
+  .title-form{
+    .label{
+      position: relative;
+      margin-bottom: 34px;
+      &:before{
+        position: absolute;
+        content: '';
+        margin: 0 auto 0 0;
+        box-shadow: none;
+        left: 30px;
+        top: 20px;
+        width: 24px;
+        height: 24px;
+        background: url("../images/general/search.svg") no-repeat;
+      }
+      &:after{
+        position: absolute;
+        content: '';
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+        left: 76px;
+        width: 1px;
+        background: $light-100;
+      }
+    }
+    .input{
+      border-radius: 5px;
+      font-size: 20px;
+      line-height: 26px;
+      padding: 24px 50px 21px 97px;
+
+      height: 65px;
+    }
+    .btn-secondary{
+      margin-bottom: 46px;
+    }
+  }
+  .title-inform__title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 20px;
+    b{
+      display: none;
+      font-weight: 400;
+    }
+  }
+  .btn-primary{
+    background: rgba($gray, .37);
+  }
+  .title-wrapper__result{}
+}
+.title-wrapper__result{
+  padding: 46px 0 92px;
+  .filter-nav__title{
+    font-size: 18px;
+    line-height: 24px;
+    color: $light-100;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .filter-nav{
+    margin-bottom: 30px;
+    ul{
+      display: flex;
+      width: 100%;
+      overflow: auto;
+    }
+    li{
+      margin-right: 30px;
+    }
+  }
+  .btn-shadow{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    img{
+      margin-right: 20px;
+    }
+  }
+  .filter-list{}
+  .filter-list__title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 30px;
+  }
+  .filter-list__inner{
+    margin-bottom: 60px;
+  }
+  .filter-item{
+    max-width: 930px;
+    background: $secondary;
+    padding: 26px 28px 25px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: none;
+    &:nth-of-type(-n+6){
+      display: flex;
+    }
+    &.hidden{
+      display: none;
+    }
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-section{
+    background-size: cover;
+    .title-wrap{
+      background: rgba($black, .3);
+      padding: 30px;
+    }
+    .title-section{
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
+    .title-form{
+      .label, .btn-secondary{
+        margin-bottom: 0;
+      }
+    }
+    form{
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      .label{
+        width: calc(100% - 194px);
+      }
+      .btn-secondary{
+        max-width: 164px;
+        margin-left: 30px;
+      }
+    }
+    .title-inform{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      .btn-primary{
+        margin-left: 30px;
+      }
+    }
+    .title-inform__title{
+      margin-bottom: 0;
+      b{
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .top-section{
+    padding: 170px 0;
+    height: 700px;
+    .title-wrap{
+      background: rgba($black, .3);
+      padding: 60px;
+    }
+    .btn-primary{
+      &:hover{
+        color: rgba($gray, .37);
+        border-color: rgba($gray, .37);
+      }
+    }
+  }
+  .title-wrapper__result{
+    padding: 60px 0 142px;
+    .filter-nav{
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+      ul{
+        overflow: visible;
+      }
+    }
+    .filter-nav__title{
+      min-width: 180px;
+      margin-bottom: 0;
+    }
+    .filter-item{
+      padding: 26px 19px 25px 30px;
+      margin-bottom: 20px;
+      display: flex;
+      &.hidden{
+        display: none;
+      }
+      img{
+        margin-right: 20px;
+      }
+    }
+  }
+}
