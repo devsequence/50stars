@@ -32,19 +32,50 @@ $('.reviews-item__media').on('click', function(e) {
     }
     e.preventDefault();
 });
+function calculateSum() {
 
+    var sum = 0;
+    //iterate through each textboxes and add the values
+    $(".calc-item").each(function() {
 
+        //add only if the value is number
+        if(!isNaN(this.value) && this.value.length!=0) {
+            sum += parseInt(this.value) || 0;
+        }
 
+    });
+    //.toFixed() method will roundoff the final sum to 2 decimal places
+    $(".total-sum").text(sum + '$');
+}
 $('.top-section .modal-group input').on('change', function(e) {
     var $this = $(this);
     var $thisText = $this.next().text();
-    console.log($thisText);
     $('.title-form .label .input').attr('placeholder', $thisText);
 });
-$('.calculation-wrap input, .calculation-wrap select').on('change', function(e) {
+$('.calculation-type input').on('change', function(e) {
     var $this = $(this);
-    console.log($this.val(), $this.attr('name') );
+    var $thisVal = $this.val();
+    $('.calc-type').attr('value', $thisVal);
+    calculateSum();
 });
+
+
+$('.calculation-select select').change(function() {
+    var sum = 0;
+    $('option:selected').each(function() {
+        sum += parseInt($(this).val(), 10);
+    });
+    $(".calc-select").attr('value', sum);
+    calculateSum();
+});
+$('.calculation-delivery input').on('change', function(e) {
+    var $this = $(this);
+    var $thisVal = $this.val();
+    $('.calc-delivery').attr('value', $thisVal);
+
+    calculateSum();
+});
+
 
 
 function popupOpen() {
@@ -77,4 +108,21 @@ $('.filter-nav .btn').on('click', function () {
     $('.filter-item').addClass('hidden');
     $('div[data-filter = '+popupButtonData+']').removeClass('hidden');
 });
+if(!$('.title-wrapper__result').children('.progress-container').length > 0) {
+    $('.progress-container').each(function (e) {
+        var $this = $(this);
+        var $thisActive = $this.find('.active').last();
+        var $thisActiveData = $this.find('.active').last().data('persent');
+        var $thisActiveText = $thisActive.text();
+        $thisActive.addClass('is-last');
+        $this.find('.progress').css('width', $thisActiveData);
+        $this.next('.item-progress__title').text($thisActiveText);
+    });
+}
+if ($(window).width() <= 1024) {
 
+    $('.track-item').on('click', function (e) {
+        var $this = $(this);
+        $this.toggleClass('is-open')
+    })
+}

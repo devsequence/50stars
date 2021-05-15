@@ -87,11 +87,17 @@
     margin-bottom: 30px;
   }
   .filter-nav{
+    padding: 0 0 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
     margin-bottom: 30px;
     ul{
       display: flex;
       width: 100%;
       overflow: auto;
+      padding: 10px;
+      margin: -10px;
     }
     li{
       margin-right: 30px;
@@ -133,6 +139,9 @@
     img{
       margin-right: 10px;
     }
+  }
+  .item-progress{
+
   }
 }
 
@@ -191,7 +200,7 @@
     }
     .btn-primary{
       &:hover{
-        color: rgba($gray, .37);
+        color: white;
         border-color: rgba($gray, .37);
       }
     }
