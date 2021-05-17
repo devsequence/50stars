@@ -2138,6 +2138,8 @@ button {
     max-width: 1440px; }
   .header-center__form {
     display: flex; }
+    .header-center__form form {
+      display: flex; }
   .header-center__form .label-number {
     max-width: 270px; }
   .hero-wrap {
