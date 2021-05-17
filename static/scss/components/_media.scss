@@ -472,7 +472,7 @@
   }
   .header{
     &-center__form{
-      display: block;
+      display: flex;
     }
     &-center__form {
       .label-number {

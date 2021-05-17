@@ -2127,8 +2127,6 @@ button {
       padding: 29px 15px 30px; }
       .header-center__nav ul li {
         margin-right: 30px; }
-  .header-center__form {
-    display: block; }
   .header-center__nav li {
     margin-right: 10px; }
   .header-center__form .label-number {
@@ -2138,6 +2136,8 @@ button {
 @media screen and (min-width: 1340px) {
   .container {
     max-width: 1440px; }
+  .header-center__form {
+    display: flex; }
   .header-center__form .label-number {
     max-width: 270px; }
   .hero-wrap {
