@@ -2135,7 +2135,7 @@ button {
     margin-right: 20px;
     margin-bottom: 0; } }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1340px) {
   .container {
     max-width: 1440px; }
   .header-center__form .label-number {
