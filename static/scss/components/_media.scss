@@ -452,9 +452,7 @@
         }
       }
     }
-    &-center__form{
-      display: block;
-    }
+
     &-center__nav {
       li{
         margin-right: 10px;
@@ -473,6 +471,9 @@
     max-width: 1440px;
   }
   .header{
+    &-center__form{
+      display: block;
+    }
     &-center__form {
       .label-number {
         max-width: 270px;
