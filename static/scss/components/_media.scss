@@ -473,6 +473,9 @@
   .header{
     &-center__form{
       display: flex;
+      form{
+        display: flex;
+      }
     }
     &-center__form {
       .label-number {
