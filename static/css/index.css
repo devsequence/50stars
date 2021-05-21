@@ -553,12 +553,6 @@ button {
     margin: 10px auto;
     display: block; }
 
-@media screen and (min-width: 768px) {
-  .pagination li {
-    display: block; }
-    .pagination li:last-of-type {
-      display: block; } }
-
 .scroll-top {
   cursor: pointer;
   opacity: 0;
@@ -579,6 +573,17 @@ button {
     opacity: 1; }
   .scroll-top .icon {
     transform: rotate(180deg); }
+
+@media screen and (min-width: 768px) {
+  .pagination li {
+    display: block; }
+    .pagination li:last-of-type {
+      display: block; } }
+
+@media screen and (min-width: 1200px) {
+  .scroll-top {
+    bottom: 50px;
+    right: 50px; } }
 
 .header-top {
   display: none; }
@@ -1652,6 +1657,7 @@ button {
       padding: 60px; }
     .top-section .btn-primary:hover {
       color: white;
+      background: rgba(171, 171, 171, 0.37);
       border-color: rgba(171, 171, 171, 0.37); }
   .title-wrapper__result {
     padding: 60px 0 142px; }

@@ -201,6 +201,7 @@
     .btn-primary{
       &:hover{
         color: white;
+        background: rgba($gray, .37);
         border-color: rgba($gray, .37);
       }
     }

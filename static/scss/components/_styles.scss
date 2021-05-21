@@ -554,16 +554,6 @@ button{
     }
   }
 }
-@media screen and (min-width: 768px) {
-  .pagination{
-    li{
-      display: block;
-      &:last-of-type{
-        display: block;
-      }
-    }
-  }
-}
 .scroll-top{
   cursor: pointer;
   opacity: 0;
@@ -585,5 +575,22 @@ button{
   }
   .icon{
     transform: rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pagination{
+    li{
+      display: block;
+      &:last-of-type{
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .scroll-top{
+    bottom: 50px;
+    right: 50px;
   }
 }
