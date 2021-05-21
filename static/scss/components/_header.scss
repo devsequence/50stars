@@ -119,11 +119,19 @@
       opacity: 1;
       z-index: 9;
       top: 0;
-      height: auto;
+      height: 100%;
+      overflow: auto;
       background: #fff;
       width: 100%;
-      max-width: 315px;
+      max-width: 265px;
       min-height: 100vh;
+      .btn-shadow{
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .header-form__title{
+        font-size: 20px;
+      }
     }
     .header-mobile__top{
       display: flex;

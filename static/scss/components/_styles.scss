@@ -91,7 +91,7 @@ span {
   &:before{
     position: absolute;
     content: '';
-    box-shadow: 0px 3px 5px 0px rgba(0, 102, 255, 0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0, 102, 255, 0.06);
     bottom: 0;
     left: 0;
     right: 0;
@@ -106,7 +106,7 @@ span {
     &:before{
       position: absolute;
       content: '';
-      box-shadow: 0px 3px 5px 0px rgba(0, 102, 255, 0.25);
+      box-shadow: 0px 4px 5px 0px rgba(0, 102, 255, 0.06);
       bottom: 7px;
       left: 0;
       right: 0;
@@ -444,7 +444,7 @@ button{
   &:before{
     position: absolute;
     content: '';
-    box-shadow: 0px 3px 5px 0px rgba(0, 102, 255, 0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0, 102, 255, 0.06);
     top: -5px;
     left: 0;
     right: 0;
@@ -475,7 +475,7 @@ button{
     &:after{
       position: absolute;
       content: '';
-      box-shadow: 0px 3px 5px 0px rgba(0, 102, 255, 0.25);
+      box-shadow: 0px 4px 5px 0px rgba(0, 102, 255, 0.06);
       bottom: 0;
       left: 0;
       right: 0;
@@ -562,5 +562,27 @@ button{
         display: block;
       }
     }
+  }
+}
+.scroll-top{
+  opacity: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background: $white;
+  box-shadow: 0px 0px 15px 0px rgba(17, 101, 227, 0.1);
+  &.is-show{
+    opacity: 1;
+  }
+  .icon{
+    transform: rotate(180deg);
   }
 }
