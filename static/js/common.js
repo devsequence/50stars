@@ -162,3 +162,4 @@ $('.scroll-top').on('click', function () {
         scrollTop: 0
     }, 300);
 });
+$('.basic-multiple').select2();

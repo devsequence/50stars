@@ -594,3 +594,71 @@ button{
     right: 50px;
   }
 }
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  display: none !important;
+}
+.select2-selection__rendered{
+
+}
+.select2-container{
+  font-family: $roboto !important;
+}
+.select2{
+  margin-bottom: 32px !important;
+}
+.select2-container .select2-selection--single{
+  height: 63px !important;
+  border: 0 !important;
+  background-color: $secondary;
+  padding: 20px 30px 19px;
+  background-size: 18px;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg id='ic-down' xmlns='http://www.w3.org/2000/svg' width='19.456' height='10.152' viewBox='0 0 19.456 10.152'%3E%3Cg id='Сгруппировать_1' data-name='Сгруппировать 1' transform='translate(0 0)'%3E%3Cpath id='Контур_8' data-name='Контур 8' d='M19.332,117.449a.423.423,0,0,0-.6,0l-9.006,9.007L.722,117.45a.423.423,0,0,0-.6.6l9.305,9.305a.425.425,0,0,0,.3.124.419.419,0,0,0,.3-.124l9.305-9.305A.423.423,0,0,0,19.332,117.449Z' transform='translate(0 -117.325)'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.select2-dropdown{
+  border: 0 !important;
+  box-shadow: 0px 5px 15px 0px rgba(17, 101, 227, 0.2);
+}
+.select2-container--default .select2-results__option--selected{
+  background-color: $primary-hover !important;
+  color: $white !important;
+}
+.select2-results__option {
+  padding: 12px 35px !important;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+  background-color: $primary !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: $black !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 300 !important;
+    font-family: $roboto !important;
+}
+//.select2-selection__rendered{
+//  border: 0 ;
+//  width: 100%;
+//  outline: none;
+//  display: block;
+//  background-color: $secondary;
+//  margin-bottom: 32px;
+//  padding: 20px 30px 19px;
+//  color: $black;
+//  font-size: 18px;
+//  line-height: 24px;
+//  font-weight: 300;
+//  border-radius: 5px;
+//  text-overflow: ellipsis;
+//  font-family: $roboto;
+//
+//  -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//
+//  background-size: 18px;
+//  background-position: center right 20px;
+//  background-repeat: no-repeat;
+//  background-image: url("data:image/svg+xml,%3Csvg id='ic-down' xmlns='http://www.w3.org/2000/svg' width='19.456' height='10.152' viewBox='0 0 19.456 10.152'%3E%3Cg id='Сгруппировать_1' data-name='Сгруппировать 1' transform='translate(0 0)'%3E%3Cpath id='Контур_8' data-name='Контур 8' d='M19.332,117.449a.423.423,0,0,0-.6,0l-9.006,9.007L.722,117.45a.423.423,0,0,0-.6.6l9.305,9.305a.425.425,0,0,0,.3.124.419.419,0,0,0,.3-.124l9.305-9.305A.423.423,0,0,0,19.332,117.449Z' transform='translate(0 -117.325)'/%3E%3C/g%3E%3C/svg%3E%0A");
+//}

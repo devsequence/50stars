@@ -110,6 +110,10 @@
     font-weight: 500;
     color: $primary;
   }
+
+}
+.select2-search--dropdown{
+  display: none !important;
 }
 @media screen and (min-width: 768px)  {
   .calculation-page{

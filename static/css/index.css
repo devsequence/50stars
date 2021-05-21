@@ -585,6 +585,46 @@ button {
     bottom: 50px;
     right: 50px; } }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: none !important; }
+
+.select2-container {
+  font-family: "Roboto", sans-serif !important; }
+
+.select2 {
+  margin-bottom: 32px !important; }
+
+.select2-container .select2-selection--single {
+  height: 63px !important;
+  border: 0 !important;
+  background-color: #F6F6F6;
+  padding: 20px 30px 19px;
+  background-size: 18px;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg id='ic-down' xmlns='http://www.w3.org/2000/svg' width='19.456' height='10.152' viewBox='0 0 19.456 10.152'%3E%3Cg id='Сгруппировать_1' data-name='Сгруппировать 1' transform='translate(0 0)'%3E%3Cpath id='Контур_8' data-name='Контур 8' d='M19.332,117.449a.423.423,0,0,0-.6,0l-9.006,9.007L.722,117.45a.423.423,0,0,0-.6.6l9.305,9.305a.425.425,0,0,0,.3.124.419.419,0,0,0,.3-.124l9.305-9.305A.423.423,0,0,0,19.332,117.449Z' transform='translate(0 -117.325)'/%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+.select2-dropdown {
+  border: 0 !important;
+  box-shadow: 0px 5px 15px 0px rgba(17, 101, 227, 0.2); }
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #074097 !important;
+  color: #ffffff !important; }
+
+.select2-results__option {
+  padding: 12px 35px !important; }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #1165E3 !important; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  font-weight: 300 !important;
+  font-family: "Roboto", sans-serif !important; }
+
 .header-top {
   display: none; }
 
@@ -1426,6 +1466,9 @@ button {
     line-height: 32px;
     font-weight: 500;
     color: #1165E3; }
+
+.select2-search--dropdown {
+  display: none !important; }
 
 @media screen and (min-width: 768px) {
   .calculation-page .calculation-wrap {
