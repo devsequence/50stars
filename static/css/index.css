@@ -256,6 +256,7 @@ span {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
+  font-family: "Roboto", sans-serif;
   color: #8294AF;
   padding: 0 12px 16px;
   width: 100%;
@@ -334,6 +335,7 @@ span {
   line-height: 24px;
   padding: 12px 12px 16px;
   font-weight: 300;
+  font-family: "Roboto", sans-serif;
   border: 0;
   outline: none;
   border-bottom: 1px solid #D6E7FF;
@@ -382,6 +384,7 @@ span {
   font-weight: 300;
   border-radius: 5px;
   text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -702,6 +705,31 @@ button {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; }
+
+.header.header-scroll {
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  height: 97px;
+  overflow: hidden; }
+
+.page-content {
+  margin-top: 212px; }
+
+@media screen and (min-width: 1024px) {
+  .header.header-scroll {
+    top: -70px;
+    height: 170px;
+    box-shadow: 0px 0px 15px 0px rgba(17, 101, 227, 0.1); }
+  .page-content {
+    margin-top: 180px; } }
 
 .footer .line-shadow:nth-of-type(2) {
   top: calc(100% - 30px);
@@ -1077,6 +1105,7 @@ button {
     box-shadow: 0px 0px 15px 0px rgba(17, 101, 227, 0.1) inset; }
 
 .start-wrapper {
+  overflow: hidden;
   padding: 32px 0 0; }
   .start-wrapper .title-section {
     margin-bottom: 29px; }
@@ -1150,6 +1179,7 @@ button {
     display: flex;
     flex-direction: column; }
   .reviews-item .reviews-media-btn {
+    z-index: 5;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1371,6 +1401,11 @@ button {
       font-size: 36px;
       line-height: 48px;
       margin-bottom: 59px; }
+    .calculation-page .label-radio:hover {
+      background-color: #074097;
+      color: #ffffff; }
+      .calculation-page .label-radio:hover .icon {
+        fill: #ffffff; }
     .calculation-page .calculation-item__title,
     .calculation-page .calculation-inner {
       box-sizing: border-box;
@@ -1596,7 +1631,15 @@ button {
       .title-wrapper__result .filter-item.hidden {
         display: none; }
       .title-wrapper__result .filter-item img {
-        margin-right: 20px; } }
+        margin-right: 20px; }
+      .title-wrapper__result .filter-item:hover {
+        background-color: #074097;
+        color: #ffffff; }
+  .pagination a:hover {
+    background-color: #074097;
+    color: #ffffff; }
+    .pagination a:hover .icon {
+      fill: #ffffff; } }
 
 .top-section {
   min-height: 515px; }
@@ -1912,6 +1955,8 @@ button {
   .container {
     padding-right: 15px;
     padding-left: 15px; }
+  .header a:hover {
+    color: #8294af; }
   .header .btn-primary {
     font-size: 18px;
     padding: 17px 21px; }
@@ -2091,6 +2136,8 @@ button {
   .footer-item {
     width: calc(25% - 30px);
     margin: 0 15px; }
+    .footer-item a:hover {
+      color: #8294af; }
     .footer-item:last-of-type {
       display: block; }
   .footer-bottom {
@@ -2101,19 +2148,18 @@ button {
     .footer-bottom__item:last-of-type {
       text-align: right; }
   .btn-shadow:hover {
-    color: #1165E3;
+    color: #000000;
     box-shadow: 0px 0px 15px 0px rgba(17, 101, 227, 0.2); }
   .btn-primary:hover {
-    border-color: #1165E3;
-    background: transparent;
-    color: #1165E3; }
+    border-color: #074097;
+    background: #074097; }
   .btn-secondary:hover {
-    border-color: #1165E3;
-    background: transparent;
-    color: #1165E3; }
+    border-color: #074097;
+    background: #074097; }
   .btn-line:hover {
-    border-color: #1165E3;
-    color: #1165E3; } }
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #000000; } }
 
 @media screen and (min-width: 1200px) {
   .container {

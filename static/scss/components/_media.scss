@@ -118,6 +118,11 @@
     padding-left: 15px;
   }
   .header{
+    a{
+      &:hover{
+        color: #8294af;
+      }
+    }
     .btn-primary{
       font-size: 18px;
       padding: 17px 21px;
@@ -389,6 +394,11 @@
     &-item{
       width: calc(25% - 30px);
       margin: 0 15px;
+      a{
+        &:hover{
+          color: #8294af;
+        }
+      }
       &:last-of-type{
         display: block;
       }
@@ -406,28 +416,27 @@
   }
   .btn-shadow{
     &:hover{
-      color: $primary;
+      color: $black;
       box-shadow: 0px 0px 15px 0px rgba(17, 101, 227, 0.2);
     }
   }
   .btn-primary{
     &:hover{
-      border-color: $primary;
-      background: transparent;
-      color: $primary;
+      border-color: $primary-hover;
+      background: $primary-hover;
     }
   }
   .btn-secondary{
     &:hover{
-      border-color: $primary;
-      background: transparent;
-      color: $primary;
+      border-color: $primary-hover;
+      background: $primary-hover;
     }
   }
   .btn-line{
     &:hover{
-      border-color: $primary;
-      color: $primary;
+      border-color: $white;
+      background: $white;
+      color: $black;
     }
   }
 }

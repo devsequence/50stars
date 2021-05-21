@@ -1,7 +1,7 @@
 $(window).on('scroll', function() {
     var $this = $(this),
         $header = $('.header');
-    if ($this.scrollTop() >= $this.height()) {
+    if ($this.scrollTop() >= $('.hero-wrapper').height()) {
         $header.addClass('header-scroll');
     }
     else{

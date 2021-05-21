@@ -176,3 +176,30 @@
     }
   }
 }
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.header.header-scroll{
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  height: 97px;
+  overflow: hidden;
+}
+.page-content{
+  margin-top: 212px;
+}
+@media screen and (min-width: 1024px) {
+  .header.header-scroll{
+    top: -70px;
+    height: 170px;
+    box-shadow: 0px 0px 15px 0px rgba(17,101,227, .1);
+  }
+  .page-content{
+    margin-top: 180px;
+  }
+}

@@ -137,6 +137,15 @@
       line-height: 48px;
       margin-bottom: 59px;
     }
+    .label-radio{
+      &:hover{
+        background-color: $primary-hover;
+        color: $white;
+        .icon{
+          fill: $white;
+        }
+      }
+    }
     .calculation-item__title,
     .calculation-inner{
       box-sizing: border-box;

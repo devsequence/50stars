@@ -229,6 +229,21 @@
       img{
         margin-right: 20px;
       }
+      &:hover{
+        background-color: $primary-hover;
+        color: $white;
+      }
+    }
+  }
+  .pagination{
+    a{
+      &:hover{
+        background-color: $primary-hover;
+        color: $white;
+        .icon{
+          fill: $white;
+        }
+      }
     }
   }
 }

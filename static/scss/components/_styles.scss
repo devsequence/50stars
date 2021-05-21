@@ -143,6 +143,7 @@ span {
       border-radius: 50%;
       background-color: $white;
     }
+
   }
   &-checkbox {
     display: block;
@@ -193,6 +194,7 @@ span {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
+  font-family: $roboto;
   color: $light-100;
   padding: 0 12px 16px;
   width: 100%;
@@ -298,6 +300,7 @@ span {
   line-height: 24px;
   padding: 12px 12px 16px;
   font-weight: 300;
+  font-family: $roboto;
   border: 0;
   outline: none;
   border-bottom: 1px solid $light;
@@ -358,6 +361,7 @@ span {
   font-weight: 300;
   border-radius: 5px;
   text-overflow: ellipsis;
+  font-family: $roboto;
 
   -webkit-appearance: none;
   -moz-appearance: none;
