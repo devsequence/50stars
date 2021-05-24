@@ -26,7 +26,7 @@
     opacity: 0;
     visibility: hidden;
     z-index: -1;
-    background: #878787;
+    background: rgba($black, .5);
     transition: all ease 1000ms;
   }
   &-wrap{
@@ -42,6 +42,24 @@
     padding: 60px 20px;
     max-width: 450px;
     width: 100%;
+    .popup-close-bg{
+      position: absolute;
+      width: 81px;
+      height: 40px;
+      top: 0;
+      right: 15px;
+      overflow: hidden;
+      &:before{
+        position: absolute;
+        content: '';
+        width: 81px;
+        height: 81px;
+        background: red;
+        top: -43px;
+        border-radius: 50%;
+        background: rgba($black, .5);
+      }
+    }
     .contact-form__title{
       text-align: center;
     }
@@ -49,11 +67,10 @@
   &-close{
     position: absolute;
     right: 20px;
-    top: -35px;
+    top: -38px;
     width: 71px;
     height: 71px;
     background: $white;
-    border: 6px solid #878787;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
